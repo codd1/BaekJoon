@@ -1,6 +1,9 @@
 #include <iostream>
+#include <deque>
 
 using namespace std;
+
+typedef pair<int, int> Node;
 
 int main() {
 	ios::sync_with_stdio(false);
@@ -10,46 +13,26 @@ int main() {
 	int N;		// 숫자의 갯수
 	int L;		// 슬라이딩 윈도우 크기
 
-	/*int D[5000001] = { 0 };
-	int A[5000001] = { 0 };*/
-	int A[501] = { 0 };
-	int D[501] = { 0 };
-
 	cin >> N >> L;
 
-	for (int i = 1; i <= N; i++) {
-		cin >> A[i];
-	}
+	deque<Node> D;
 
-	int start = 1 - L + 1;
-	int end = 1;
-	int min = A[1];
-	int index = 1;
+	int now;
 
-	while (end <= N) {
-		for (int i = start; i <= end; i++) {
-			//printf("%d번 인덱스 - %d ~ %d 비교\n", index, start, end);
-			if (i <= 0) {
-				continue;
-			}
+	for (int i = 0; i < N; i++) {
+		cin >> now;
 
-			if (A[i] < min) {
-				//printf("\t***** A[%d] < %d\n", i, min);
-				min = A[i];
-			}
+		while (D.size() && D.back().first > now) {
+			D.pop_back();
 		}
-		D[index] = min;
-		index++;
 
-		min = A[index];
+		D.push_back(Node(now, i));
 
-		start++;
-		end++;
+		if (D.front().second <= i - L) {
+			D.pop_front();
+		}
 
-	}
-
-	for (int i = 1; i <= N; i++) {
-		cout << D[i] << " ";
+		cout << D.front().first << " ";
 	}
 
 	return 0;
