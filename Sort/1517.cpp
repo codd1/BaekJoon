@@ -1,66 +1,76 @@
 #include <iostream>
 #include <vector>
-#include <algorithm>
 
 using namespace std;
+
+void merge_sort(vector<int>& A, int first, int second);
+
+static int N;	// 수의 갯수
+static long count_swap;		// swap 횟수
 
 int main() {
 	ios::sync_with_stdio(false);
 	cin.tie(NULL);
 	cout.tie(NULL);
 
-	int N;	// 수의 갯수
 	cin >> N;
 
-	vector<int> A(N + 1);
-	int count = 0;
-	
+	vector<int> A(N + 1);	// N개의 수
+
+	// 입력
 	for (int i = 1; i <= N; i++) {
 		cin >> A[i];
 	}
 
-	vector<int> sortA(N + 1);
-	sortA = A;
-	sort(sortA.begin(), sortA.end());
+	count_swap = 0;
 
-	int first = 1;
-	int second = N;
-	int temp;
+	merge_sort(A, 1, N);
 
-	while (first < second) {
-		for (int i = first; i <= second; i++) {
-			if (A[i] > A[i + 1]) {
-				temp = A[i];
-				A[i] = A[i + 1];
-				A[i + 1] = temp;
+	cout << count_swap << "\n";
 
-				count++;
-				break;
-			}
+	return 0;
+}
+
+void merge_sort(vector<int>& A, int start, int end) {
+	if (start == end) {
+		return;
+	}
+
+	int middle = (start + end) / 2;	// 중간 값
+
+	merge_sort(A, start, middle);
+	merge_sort(A, middle + 1, end);
+
+	vector<int> tempA(N + 1);	// 임시 벡터
+	tempA = A;
+
+	int index1 = start;
+	int index2 = middle + 1;
+
+	int i = start;
+	while (index1 <= middle && index2 <= end) {
+		if (A[index1] < A[index2]) {
+			tempA[i] = A[index1];
+
+			index1++, i++;
 		}
+		else {
+			tempA[i] = A[index2];
 
-		int i = 1;
-		// 일부 정렬이 됐다면, first 값 변경
-		for (; i <= N; i++) {
-			if (A[i] == sortA[i]) {
-				first = i + 1;
-			}
-			else {
-				break;
-			}
-		}
-		// 일부 정렬이 됐다면, second 값 변경
-		for (; i <= N; i++) {
-			if (A[i] == sortA[i]) {
-				second = i - 1;
-			}
-			else {
-				break;
-			}
+			count_swap += index2 - i;	// index2가 i로 이동한만큼 swap 수 count
+
+			index2++, i++;
 		}
 	}
 
-	cout << count << '\n';
+	// 남은 데이터가 있다면 처리
+	while (index1 <= middle) {
+		tempA[i++] = A[index1++];
+	}
+	while (index2 <= end) {
+		tempA[i++] = A[index2++];
+	}
 
-	return 0;
+	// 다시 A에 복사
+	A = tempA;
 }
