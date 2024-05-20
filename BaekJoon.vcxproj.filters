@@ -194,5 +194,8 @@
     <ClCompile Include="CodingTest\크래인인형뽑기게임(2019카카오개발자겨울인턴십).cpp">
       <Filter>소스 파일\CodingTest</Filter>
     </ClCompile>
+    <ClCompile Include="CodingTest\추억점수(연습문제).cpp">
+      <Filter>소스 파일\CodingTest</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
