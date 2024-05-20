@@ -54,7 +54,10 @@
     <ClCompile Include="CodingTest\소수만들기(연습문제).cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="CodingTest\올바른괄호(스택).cpp" />
+    <ClCompile Include="CodingTest\오픈채팅방.cpp" />
+    <ClCompile Include="CodingTest\올바른괄호(스택).cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="CodingTest\추억점수(연습문제).cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>

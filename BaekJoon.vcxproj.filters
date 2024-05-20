@@ -203,5 +203,8 @@
     <ClCompile Include="CodingTest\올바른괄호(스택).cpp">
       <Filter>소스 파일\CodingTest</Filter>
     </ClCompile>
+    <ClCompile Include="CodingTest\오픈채팅방.cpp">
+      <Filter>소스 파일\CodingTest</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
