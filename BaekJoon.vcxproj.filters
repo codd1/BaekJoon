@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="소스 파일\1. InputOutput">
+      <UniqueIdentifier>{e134189d-07fc-4f0b-80e5-402d7a2d78d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\3. Brute-Force">
+      <UniqueIdentifier>{bfdb58ba-3810-4a74-b0dd-d76f1f8f01fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\2. DataStructure">
+      <UniqueIdentifier>{d74bbb1b-1ae4-44d6-9657-2a203c450d24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\4. Sort">
+      <UniqueIdentifier>{5f95e81c-a3f2-4047-a3e9-a44241dd83c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\CodingTest">
+      <UniqueIdentifier>{ef5288ec-b5d7-4b5a-9548-14526a0e5c01}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="InputOutput\2438.cpp">
+      <Filter>소스 파일\1. InputOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="InputOutput\1924.cpp">
+      <Filter>소스 파일\1. InputOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="InputOutput\2439.cpp">
+      <Filter>소스 파일\1. InputOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="InputOutput\2440.cpp">
+      <Filter>소스 파일\1. InputOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="InputOutput\2442.cpp">
+      <Filter>소스 파일\1. InputOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="InputOutput\2441.cpp">
+      <Filter>소스 파일\1. InputOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="InputOutput\2445.cpp">
+      <Filter>소스 파일\1. InputOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="InputOutput\2588.cpp">
+      <Filter>소스 파일\1. InputOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="InputOutput\2739.cpp">
+      <Filter>소스 파일\1. InputOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="InputOutput\2742.cpp">
+      <Filter>소스 파일\1. InputOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="InputOutput\10818.cpp">
+      <Filter>소스 파일\1. InputOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="InputOutput\10951.cpp">
+      <Filter>소스 파일\1. InputOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="InputOutput\10953.cpp">
+      <Filter>소스 파일\1. InputOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="InputOutput\11718.cpp">
+      <Filter>소스 파일\1. InputOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="InputOutput\11719.cpp">
+      <Filter>소스 파일\1. InputOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="InputOutput\11721.cpp">
+      <Filter>소스 파일\1. InputOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="InputOutput\11720.cpp">
+      <Filter>소스 파일\1. InputOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="InputOutput\11022.cpp">
+      <Filter>소스 파일\1. InputOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="InputOutput\11021.cpp">
+      <Filter>소스 파일\1. InputOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="InputOutput\10952.cpp">
+      <Filter>소스 파일\1. InputOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="InputOutput\10950.cpp">
+      <Filter>소스 파일\1. InputOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="InputOutput\8393.cpp">
+      <Filter>소스 파일\1. InputOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="InputOutput\2741.cpp">
+      <Filter>소스 파일\1. InputOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="BruteForce\2798.cpp">
+      <Filter>소스 파일\3. Brute-Force</Filter>
+    </ClCompile>
+    <ClCompile Include="BruteForce\1436.cpp">
+      <Filter>소스 파일\3. Brute-Force</Filter>
+    </ClCompile>
+    <ClCompile Include="BruteForce\19532.cpp">
+      <Filter>소스 파일\3. Brute-Force</Filter>
+    </ClCompile>
+    <ClCompile Include="BruteForce\1526.cpp">
+      <Filter>소스 파일\3. Brute-Force</Filter>
+    </ClCompile>
+    <ClCompile Include="BruteForce\17945.cpp">
+      <Filter>소스 파일\3. Brute-Force</Filter>
+    </ClCompile>
+    <ClCompile Include="BruteForce\1065.cpp">
+      <Filter>소스 파일\3. Brute-Force</Filter>
+    </ClCompile>
+    <ClCompile Include="BruteForce\2231.cpp">
+      <Filter>소스 파일\3. Brute-Force</Filter>
+    </ClCompile>
+    <ClCompile Include="BruteForce\2839.cpp">
+      <Filter>소스 파일\3. Brute-Force</Filter>
+    </ClCompile>
+    <ClCompile Include="DataStructure\1546.cpp">
+      <Filter>소스 파일\2. DataStructure</Filter>
+    </ClCompile>
+    <ClCompile Include="DataStructure\11659.cpp">
+      <Filter>소스 파일\2. DataStructure</Filter>
+    </ClCompile>
+    <ClCompile Include="DataStructure\11660.cpp">
+      <Filter>소스 파일\2. DataStructure</Filter>
+    </ClCompile>
+    <ClCompile Include="DataStructure\10986.cpp">
+      <Filter>소스 파일\2. DataStructure</Filter>
+    </ClCompile>
+    <ClCompile Include="DataStructure\2018.cpp">
+      <Filter>소스 파일\2. DataStructure</Filter>
+    </ClCompile>
+    <ClCompile Include="DataStructure\1940.cpp">
+      <Filter>소스 파일\2. DataStructure</Filter>
+    </ClCompile>
+    <ClCompile Include="DataStructure\1253.cpp">
+      <Filter>소스 파일\2. DataStructure</Filter>
+    </ClCompile>
+    <ClCompile Include="DataStructure\1253_best.cpp">
+      <Filter>소스 파일\2. DataStructure</Filter>
+    </ClCompile>
+    <ClCompile Include="DataStructure\12891.cpp">
+      <Filter>소스 파일\2. DataStructure</Filter>
+    </ClCompile>
+    <ClCompile Include="DataStructure\11003.cpp">
+      <Filter>소스 파일\2. DataStructure</Filter>
+    </ClCompile>
+    <ClCompile Include="DataStructure\1874.cpp">
+      <Filter>소스 파일\2. DataStructure</Filter>
+    </ClCompile>
+    <ClCompile Include="DataStructure\1874_best.cpp">
+      <Filter>소스 파일\2. DataStructure</Filter>
+    </ClCompile>
+    <ClCompile Include="DataStructure\17298.cpp">
+      <Filter>소스 파일\2. DataStructure</Filter>
+    </ClCompile>
+    <ClCompile Include="DataStructure\2164.cpp">
+      <Filter>소스 파일\2. DataStructure</Filter>
+    </ClCompile>
+    <ClCompile Include="DataStructure\11286.cpp">
+      <Filter>소스 파일\2. DataStructure</Filter>
+    </ClCompile>
+    <ClCompile Include="Sort\1377.cpp">
+      <Filter>소스 파일\4. Sort</Filter>
+    </ClCompile>
+    <ClCompile Include="Sort\1427.cpp">
+      <Filter>소스 파일\4. Sort</Filter>
+    </ClCompile>
+    <ClCompile Include="Sort\2750.cpp">
+      <Filter>소스 파일\4. Sort</Filter>
+    </ClCompile>
+    <ClCompile Include="Sort\11399.cpp">
+      <Filter>소스 파일\4. Sort</Filter>
+    </ClCompile>
+    <ClCompile Include="Sort\11004.cpp">
+      <Filter>소스 파일\4. Sort</Filter>
+    </ClCompile>
+    <ClCompile Include="Sort\2751.cpp">
+      <Filter>소스 파일\4. Sort</Filter>
+    </ClCompile>
+    <ClCompile Include="Sort\1517.cpp">
+      <Filter>소스 파일\4. Sort</Filter>
+    </ClCompile>
+    <ClCompile Include="Sort\10989_radixSort.cpp">
+      <Filter>소스 파일\4. Sort</Filter>
+    </ClCompile>
+    <ClCompile Include="Sort\10989_countingSort.cpp">
+      <Filter>소스 파일\4. Sort</Filter>
+    </ClCompile>
+    <ClCompile Include="CodingTest\크래인인형뽑기게임(2019카카오개발자겨울인턴십).cpp">
+      <Filter>소스 파일\CodingTest</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
