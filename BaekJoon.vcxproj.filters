@@ -21,6 +21,9 @@
     <Filter Include="소스 파일\4. Sort">
       <UniqueIdentifier>{5f95e81c-a3f2-4047-a3e9-a44241dd83c7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\5. Search">
+      <UniqueIdentifier>{42312b28-8852-4490-bc4a-256e119cbfa2}</UniqueIdentifier>
+    </Filter>
     <Filter Include="소스 파일\CodingTest">
       <UniqueIdentifier>{ef5288ec-b5d7-4b5a-9548-14526a0e5c01}</UniqueIdentifier>
     </Filter>
@@ -205,6 +208,9 @@
     </ClCompile>
     <ClCompile Include="CodingTest\오픈채팅방.cpp">
       <Filter>소스 파일\CodingTest</Filter>
+    </ClCompile>
+    <ClCompile Include="Search\11724.cpp">
+      <Filter>소스 파일\5. Search</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
