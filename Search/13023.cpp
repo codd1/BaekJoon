@@ -1,8 +1,24 @@
 #include <iostream>
 #include <vector>
-#include <stack>
 
 using namespace std;
+
+
+void DFS(vector<vector<int>>& friends, vector<bool> visited, int num, int size) {		// 재귀 함수이므로 값이 바뀌는 visited, size는 복사 값 사용
+	visited[num] = true;
+	size++;
+
+	if (size == 5) {			// 서로 연결된 친구 5명을 찾을 경우 즉시 종료
+		cout << 1 << endl;
+		exit(0);
+	}
+
+	for (int i = 0; i < friends[num].size(); i++) {
+		if (visited[friends[num][i]] == false) {			// 아직 방문하지 않은 친구만 찾아서
+			DFS(friends, visited, friends[num][i], size);	// DFS 함수 실행
+		}
+	}
+}
 
 int main() {
 	int N, M;	// N: 사람의 수 / M: 친구 관계의 수
@@ -10,53 +26,21 @@ int main() {
 
 	vector<vector<int>> friends(N);
 	vector<bool> visited(N, false);
-	stack<int> relation;
 
 	int friend1, friend2;
 	for (int i = 0; i < M; i++) {
 		cin >> friend1 >> friend2;
 
-		friends[friend1].push_back(friend2);
+		friends[friend1].push_back(friend2);	// 입력 받아서 인접 리스트 구현
 		friends[friend2].push_back(friend1);
 	}
 
-	int size = 0;
-	int top;
-	bool isNext = false;			// 연결된, 방문하지 않은 친구가 있는지 확인
+	int size;
 
 	for (int i = 0; i < N; i++) {
 		size = 0;
 
-		relation.push(i);
-		visited[i] = true;
-
-		while (!relation.empty()) {
-			top = relation.top();
-			relation.pop();
-			visited[top] = true;
-			isNext = false;
-
-			size++;
-
-			for (int j = 0; j < friends[top].size(); j++) {
-				if (visited[friends[top][j]] == false) {
-					relation.push(friends[top][j]);		// 연결된 친구 중 아직 방문하지 않은 친구가 있다면 push
-
-					isNext = true;		// push했으므로 true로 변경
-				}
-			}
-
-			if (isNext == false && size != 5) {			// 새로 추가한 친구가 없다면 더이상 연결이 안되는 것이므로 조건 미달 (size--)
-				size--;
-			}
-		}
-		
-		if (size == 5) {
-			cout << 1 << endl;
-			return 0;
-		}
-
-		std::fill(visited.begin(), visited.end(), false);		// visited 원소 모두 false로 초기화
+		DFS(friends, visited, i, size);		// 0 ~ N-1 순차적으로 DFS 함수 실행
 	}
 
 	cout << 0 << endl;
